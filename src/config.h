@@ -6,7 +6,7 @@ static unsigned int cols = 80;
 static unsigned int rows = 24;
 
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true;";
+static char *font = "-*-lime-medium-r-normal-*-10-110-75-75-*-50-iso8859-1";
 
 /* exec precedence: -e arg, utmp option, SHELL env var, /etc/passwd shell */
 static char *shell = "\0";
