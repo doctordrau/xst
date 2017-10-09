@@ -48,7 +48,8 @@ static int bellvolume = 100;
  */
 static unsigned int tabspaces = 8;
 /* bg opacity */
-static int alpha = 0xff;
+static const int alpha = 0xcd;
+/*static int alpha = 0xff;*/
 
 
 /* other */
