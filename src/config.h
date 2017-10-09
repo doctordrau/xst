@@ -61,45 +61,44 @@ static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 static unsigned int xfps = 120;
 static unsigned int actionfps = 30;
 static char *termname = "st-256color";
-static char *colorname[] = {
-	"#1e1e1e",
-	"#cf6a4c",
-	"#8f9d6a",
-	"#f9ee98",
-	"#7587a6",
-	"#9b859d",
-	"#afc4db",
-	"#a7a7a7",
-	"#5f5a60",
-	"#cda869",
-	"#323537",
-	"#464b50",
-	"#838184",
-	"#c3c3c3",
-	"#9b703f",
-	"#ffffff",
+static const char *colorname[] = {
+    /* solarized dark */
+    "#393a2f",  /*   0: black    */
+    "#a5755a",  /*   1: red      */
+    "#948f51",  /*   2: green    */
+    "#cbbca6",  /*   3: yellow   */
+    "#6f7b75",  /*   4: blue     */
+    "#906638",  /*   5: magenta  */
+    "#686855",  /*   6: cyan     */
+    "#fbf2e9",  /*   7: white    */
+    "#393a2f",  /*   8: brblack  */
+    "#c2896a",  /*   9: brred    */
+    "#b8b265",  /*  10: brgreen  */
+    "#e1d0b8",  /*  11: bryellow */
+    "#a0b0a8",  /*  12: brblue   */
+    "#b37f46",  /*  13: brmagenta*/
+    "#8d8d73",  /*  14: brcyan   */
+    "#fbf2e9",  /*  15: brwhite  */
 
-	[255] = 0,
+    [255] = 0,  /* other colors follow */
 
-	"#a7a7a7", 		/* [default] defaultfg */
-	"#1e1e1e",		/* [default] defaultbg */
-	"#a7a7a7",              /* [default] defaultcs */
-	"#1e1e1e",		/* [default] defaultrcs */
-	"black",
+    "#000000",  /* 256: background */
+    "#ffffff",  /* 258: background */ 
+    "#fbfbfb",  /* 257: foreground */
 };
 
 /* fg, bg, cursor, reverse cursor (references colorname indexes) */
-static unsigned int defaultfg = 256;
-static unsigned int defaultbg = 257;
-static unsigned int defaultcs = 258;
-static unsigned int defaultrcs = 259;
+static unsigned int defaultfg = 258;
+static unsigned int defaultbg = 256;
+static unsigned int defaultcs = 14;
+static unsigned int defaultrcs = 257;
 
 /* 2 4 6 7: █ _ | ☃ */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /* 0: normal blinking
  * 1: leave cursor border and blink with cursor's background */
-static unsigned int cursorblinkstyle = 0;
+static unsigned int cursorblinkstyle = 1;
 
 /* 0: cursor blinks with a constant interval
  * 1: blinking cycle resets on key input */
