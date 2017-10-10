@@ -48,7 +48,7 @@ static int bellvolume = 100;
  */
 static unsigned int tabspaces = 8;
 /* bg opacity */
-static int alpha = 0xcd;
+static int alpha = 0xcc;
 /*static int alpha = 0xff;*/
 
 
@@ -82,8 +82,8 @@ static char *colorname[] = {
 
 	[255] = 0,
 
-        "#cccccc",
- 	"#555555",
+        "#cccccc",  /* [default] defaultfg */
+ 	"#555555",  /* [default] defaultbg */
 	"black",
         
 		
