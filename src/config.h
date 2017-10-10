@@ -48,7 +48,7 @@ static int bellvolume = 100;
  */
 static unsigned int tabspaces = 8;
 /* bg opacity */
-static int alpha = 0xcc;
+static int alpha = 0xcd;
 /*static int alpha = 0xff;*/
 
 
@@ -63,7 +63,7 @@ static unsigned int xfps = 120;
 static unsigned int actionfps = 30;
 static char *termname = "st-256color";
 static char *colorname[] = {
-	"#1e1e1e",
+	/*"#1e1e1e",
 	"#cf6a4c",
 	"#8f9d6a",
 	"#f9ee98",
@@ -78,8 +78,25 @@ static char *colorname[] = {
 	"#838184",
 	"#c3c3c3",
 	"#9b703f",
-	"#ffffff",
+	"#ffffff",*/
 
+    	"#393a2f",  /*   0: black    */
+    	"#a5755a",  /*   1: red      */
+    	"#948f51",  /*   2: green    */
+    	"#cbbca6",  /*   3: yellow   */
+    	"#6f7b75",  /*   4: blue     */
+    	"#906638",  /*   5: magenta  */
+    	"#686855",  /*   6: cyan     */
+    	"#fbf2e9",  /*   7: white    */
+    	"#393a2f",  /*   8: brblack  */
+    	"#c2896a",  /*   9: brred    */
+    	"#b8b265",  /*  10: brgreen  */
+    	"#e1d0b8",  /*  11: bryellow */
+    	"#a0b0a8",  /*  12: brblue   */
+    	"#b37f46",  /*  13: brmagenta*/
+    	"#8d8d73",  /*  14: brcyan   */
+    	"#fbf2e9",  /*  15: brwhite  */
+	
 	[255] = 0,
 
         "#cccccc",  /* [default] defaultfg */
