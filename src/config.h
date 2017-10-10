@@ -84,7 +84,7 @@ static char *colorname[] = {
 
         "#cccccc",
  	"#555555",
-+	"black",
+	"black",
         
 		
 	/*"#a7a7a7",*/ 		/* [default] defaultfg */
