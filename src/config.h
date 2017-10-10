@@ -99,12 +99,12 @@ static char *colorname[] = {
 	
 	[255] = 0,
 
-        "#cccccc",  /* [default] defaultfg */
- 	"#555555",  /* [default] defaultbg */
-	"black",
+       /* "#cccccc",
+ 	"#555555", 
+	"black",*/
         
 		
-	/*"#a7a7a7",*/ 		/* [default] defaultfg */
+	"#a7a7a7", 		/* [default] defaultfg */
 	/*"#1e1e1e",*/		/* [default] defaultbg */
 	/*"#a7a7a7",*/              /* [default] defaultcs */
 	/*"#1e1e1e",*/		/* [default] defaultrcs */
