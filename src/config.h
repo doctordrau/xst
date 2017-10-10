@@ -82,10 +82,10 @@ static char *colorname[] = {
 
 	[255] = 0,
 
-	"black",  /* 256: background */
-        "#1e1e1e",  /* 258: background */ 
-        "#1e1e1e",  /* 257: foreground */
-	/*"black",*/
+        "#cccccc",
+ 	"#555555",
++	"black",
+        
 		
 	/*"#a7a7a7",*/ 		/* [default] defaultfg */
 	/*"#1e1e1e",*/		/* [default] defaultbg */
@@ -96,10 +96,15 @@ static char *colorname[] = {
 
 
 /* fg, bg, cursor, reverse cursor (references colorname indexes) */
-static unsigned int defaultfg = 256;
+static unsigned int  defaultfg = 7;
+static unsigned int  defaultbg = 257;
+static unsigned int  defaultcs = 256;
+static unsigned int  defaultrcs = 257;
+
+/*static unsigned int defaultfg = 256;
 static unsigned int defaultbg = 257;
 static unsigned int defaultcs = 258;
-static unsigned int defaultrcs = 259;
+static unsigned int defaultrcs = 259;*/
 
 /*static unsigned int defaultfg = 258;
 static unsigned int defaultbg = 256;
