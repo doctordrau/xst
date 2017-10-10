@@ -83,8 +83,8 @@ static char *colorname[] = {
 	[255] = 0,
 
 	"#000000",  /* 256: background */
-        "#ffffff",  /* 258: background */ 
-        "#fbfbfb",  /* 257: foreground */
+        "#000000",  /* 258: background */ 
+        "#000000",  /* 257: foreground */
 	
 	/*"#a7a7a7",*/ 		/* [default] defaultfg */
 	/*"#1e1e1e",*/		/* [default] defaultbg */
