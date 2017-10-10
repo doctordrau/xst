@@ -95,15 +95,15 @@ static char *colorname[] = {
 
 
 /* fg, bg, cursor, reverse cursor (references colorname indexes) */
-/*static unsigned int defaultfg = 256;
+static unsigned int defaultfg = 256;
 static unsigned int defaultbg = 257;
 static unsigned int defaultcs = 258;
-static unsigned int defaultrcs = 259;*/
+static unsigned int defaultrcs = 259;
 
-static unsigned int defaultfg = 258;
+/*static unsigned int defaultfg = 258;
 static unsigned int defaultbg = 256;
 static unsigned int defaultcs = 14;
-static unsigned int defaultrcs = 257;		
+static unsigned int defaultrcs = 257;*/		
 
 /* 2 4 6 7: █ _ | ☃ */
 static unsigned int cursorshape = 6;
