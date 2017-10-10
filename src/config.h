@@ -86,11 +86,11 @@ static char *colorname[] = {
         "#ffffff",  /* 258: background */ 
         "#fbfbfb",  /* 257: foreground */
 	
-	/*"#a7a7a7", 		/* [default] defaultfg */
-	/*"#1e1e1e",		/* [default] defaultbg */
-	/*"#a7a7a7",              /* [default] defaultcs */
-	/*"#1e1e1e",		/* [default] defaultrcs */
-	/*"black",
+	/*"#a7a7a7",*/ 		/* [default] defaultfg */
+	/*"#1e1e1e",*/		/* [default] defaultbg */
+	/*"#a7a7a7",*/              /* [default] defaultcs */
+	/*"#1e1e1e",*/		/* [default] defaultrcs */
+	/*"black",*/
 };
 
 
