@@ -6,7 +6,8 @@ static unsigned int cols = 80;
 static unsigned int rows = 24;
 
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
-static char *font = "-*-lime-medium-r-normal-*-10-110-75-75-*-50-iso8859-1";
+static char *font = "-*-profont-medium-r-normal-*-11-110-72-72-c-60-iso8859-1";
+/*static char *font = "-*-lime-medium-r-normal-*-10-110-75-75-*-50-iso8859-1"; */
 
 /* exec precedence: -e arg, utmp option, SHELL env var, /etc/passwd shell */
 static char *shell = "\0";
@@ -59,9 +60,9 @@ static char *utmp = NULL;
 static int borderpx = 10;
 static int bold_font = 0;
 static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
-static unsigned int xfps = 120;
+static unsigned int xfps = 60;/*120 */
 static unsigned int actionfps = 30;
-static char *termname = "st-256color";
+static char *termname = "xterm-256color"; /*st */
 static char *colorname[] = {
 	"#1e1e1e",
 	"#cf6a4c",
