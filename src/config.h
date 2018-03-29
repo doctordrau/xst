@@ -125,21 +125,21 @@ static unsigned int defaultcs = 14;
 static unsigned int defaultrcs = 257;*/		
 
 /* 2 4 6 7: █ _ | ☃ */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 4;
 
 /* 0: normal blinking
  * 1: leave cursor border and blink with cursor's background */
-static unsigned int cursorblinkstyle = 1;
+static unsigned int cursorblinkstyle = 0;
 
 /* 0: cursor blinks with a constant interval
  * 1: blinking cycle resets on key input */
-static unsigned int cursorblinkontype = 1;
+static unsigned int cursorblinkontype = 0;
 
 /* thickness of underline and bar cursors */
 static unsigned int cursorthickness = 2;
 
 /* blinking timeout for terminal and cursor blinking (0 disables) */
-static unsigned int blinktimeout = 400;
+static unsigned int blinktimeout = 800;
 
 /* mouse (again colors reference colorname indexes) */
 static unsigned int mouseshape = XC_xterm;
