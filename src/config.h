@@ -139,7 +139,7 @@ static unsigned int cursorblinkontype = 0;
 static unsigned int cursorthickness = 2;
 
 /* blinking timeout for terminal and cursor blinking (0 disables) */
-static unsigned int blinktimeout = 400;
+static unsigned int blinktimeout = 0;
 
 /* mouse (again colors reference colorname indexes) */
 static unsigned int mouseshape = XC_xterm;
