@@ -6,7 +6,8 @@ static unsigned int cols = 80;
 static unsigned int rows = 24;
 
 /* ref: http://freedesktop.org/software/fontconfig/fontconfig-user.html */
-static char *font = "-*-profont-medium-r-normal-*-11-110-72-72-c-60-iso8859-1";
+static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true;";
+/*static char *font = "-*-profont-medium-r-normal-*-11-110-72-72-c-60-iso8859-1"; */
 /*static char *font = "-*-lime-medium-r-normal-*-10-110-75-75-*-50-iso8859-1"; */
 
 /* exec precedence: -e arg, utmp option, SHELL env var, /etc/passwd shell */
@@ -49,8 +50,8 @@ static int bellvolume = 100;
  */
 static unsigned int tabspaces = 8;
 /* bg opacity */
-static int alpha = 0xcd;
-/*static int alpha = 0xff;*/
+/*static int alpha = 0xcd; */
+static int alpha = 0xff;
 
 
 /* other */
@@ -60,9 +61,9 @@ static char *utmp = NULL;
 static int borderpx = 10;
 static int bold_font = 0;
 static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
-static unsigned int xfps = 60;/*120 */
-static unsigned int actionfps = 30;
-static char *termname = "xterm-256color"; /*st */
+static unsigned int xfps = 120;/*60 */
+static unsigned int actionfps = 60;
+static char *termname = "st-256color"; /*xterm */
 static char *colorname[] = {
 	"#1e1e1e",
 	"#cf6a4c",
@@ -133,13 +134,13 @@ static unsigned int cursorblinkstyle = 0;
 
 /* 0: cursor blinks with a constant interval
  * 1: blinking cycle resets on key input */
-static unsigned int cursorblinkontype = 0;
+static unsigned int cursorblinkontype = 1;
 
 /* thickness of underline and bar cursors */
 static unsigned int cursorthickness = 2;
 
 /* blinking timeout for terminal and cursor blinking (0 disables) */
-static unsigned int blinktimeout = 0;
+static unsigned int blinktimeout = 800;
 
 /* mouse (again colors reference colorname indexes) */
 static unsigned int mouseshape = XC_xterm;
